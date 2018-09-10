@@ -1,4 +1,4 @@
-package com.onlinequiz.pro.controllers;
+package com.onlinequiz.pro.controller;
 
 import com.onlinequiz.pro.models.Register;
 import com.onlinequiz.pro.services.RegisterService;
