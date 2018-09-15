@@ -29,6 +29,19 @@ public class RegValidator implements Validator {
         {
             errors.rejectValue("email","register.email","email cannot be empty");
         }
+        if(register.getStudentId()==0)
+        {
+            errors.rejectValue("studentid","register.studentId","student id cannot be empty");
+        }
+
+        if(register.getPassword()==null||register.getPassword()=="")
+        {
+            errors.rejectValue("password","student.password","password cannot be empty");
+        }
+        else if(register.getPassword().length()<6)
+        {
+            errors.rejectValue("password","register.passsword","password cannot be less than 6 letters");
+        }
 
     }
 }

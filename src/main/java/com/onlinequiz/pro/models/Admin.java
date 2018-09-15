@@ -1,8 +1,16 @@
 package com.onlinequiz.pro.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Admin {
-    private String adminusername;
-    private String adminpassword;
+    @Id
+     @Column(name = "adminusername")
+    String adminusername;
+    @Column(name = "adminpassword")
+     String adminpassword;
 
     public Admin() {
 
